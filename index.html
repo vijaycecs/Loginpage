@@ -1,0 +1,105 @@
+<html>
+    <head>
+       <style>
+body{
+    background:linear-gradient(to top,rgb(41, 31, 31),aqua);
+    background:linear-gradient(to left,rgb(182, 236, 231),rgb(4, 193, 250));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:local;
+}
+h1{
+    text-shadow: 0px 4px 3px black;
+    background-size: contain;
+    background-position: 600px;
+    text-align: center  ;
+    color: rgb(0, 0, 0);
+}
+form{
+    background-image: url(1.jpg);
+
+    text-align:center; 
+    border: none;
+    font-family: 'Aladin';
+    box-shadow:0px 0px 10px 7px rgb(232, 245, 247);
+    margin:auto;
+    width:420px;
+    height:500px;
+    color:darkblue;
+    border-radius:50px;
+    background: transparent
+}
+.hi{
+    position: relative;
+    width: 100px;
+    height: 24px;
+    left:0;
+    top: 20px;
+    
+}
+input{
+    border:none;
+    border-left: 1px solid rgb(37, 42, 43);
+    border-top: 1px solid rgb(49, 63, 63);
+    border-right: 1px solid rgb(51, 62, 63);
+    border-bottom: 1px solid rgb(51, 47, 47);
+    border-radius: 6px;
+    width:200px;
+    height: 30px;
+    
+}
+.hii{
+    size: 20px;
+    width:20px;
+    height: 15px;
+    left:0;
+    top: 20px;
+}
+form::after{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height:50px;
+    color: aliceblue;
+
+}
+       </style>
+    </head>
+    <body>
+
+        <h1>VIJAY</h1>
+        <br><br>
+        <form>
+            <br><br><br><br>
+                <label for="email">EMAIL:</label><br><br>
+                <input type="email" required placeholder=""><br><br>
+                <label for="user">USERNAME:</label><br><br>
+                <input type="user" required placeholder="" ><br><br>
+                <label for="user">PASSWORD:</label><br><br>
+                <input  type="password" required placeholder="Strong password" id="myInput" ><br><br>
+            <div>
+                <input type="checkbox" class="hii" onclick="myFunction()">Show password
+            </div>
+            <div>
+            <input type="submit" value="login " class="hi">
+            </div>
+            <br><br><br><br>
+           <a href="#"><b> Forget Password</b></a>  
+        </form>   
+       
+        <script>
+                function myFunction() {
+                var x = document.getElementById("myInput");
+                if (x.type === "password")
+                 {
+                     x.type = "text";
+                 } 
+                 else
+                    {
+                        x.type = "password";
+                    }
+            }
+        </script>     
+            <span class="c" ></span>
+    </body>
+</html>
